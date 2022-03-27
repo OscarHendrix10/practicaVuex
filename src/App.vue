@@ -1,7 +1,10 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+       <a class="navbar-brand" href="#"><p class="TextLogo">𝓟𝓪𝓼𝓽𝓮𝓵𝓮𝓻𝓲𝓪 𝓢𝓪𝓴𝓾𝓻𝓪</p></a>
+      <router-link to="/">Cliente</router-link>
+      <router-link to="/about">Pastelero</router-link>
+    </div>
   </nav>
   <router-view/>
 </template>
@@ -25,6 +28,11 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+      color: #fad2dd;
+
+}
+
+.TextLogo{
+  color: #fad2dd;
 }
 </style>
